@@ -49,7 +49,6 @@ function actionsOnLoad(linkPath) {
 		history.pushState(null, null, linkPath); // make it look like we changed pages in page history
 		managePostsNavigation(linkPath);
 	}
-	setTimeout(checkJoan, 3000);
 }
 
 
@@ -59,5 +58,4 @@ $(document).ready(function(){
 	window.addEventListener('popstate', function() {
 		sameSiteLinkPopstate();
 	});
-	setInterval(checkJoan, 30 * 1000)
 });
